@@ -1,5 +1,5 @@
 {% set name = "calver" %}
-{% set version = "2022.6.26" %}
+{% set version = "2025.3.31" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/calver-{{ version }}.tar.gz
-  sha256: e05493a3b17517ef1748fbe610da11f10485faa7c416b9d33fd4a52d74894f8b
+  sha256: 255d1a70bba8f97dc1eee3af4240ed35980508da69257feef94c79e5c6545fc7
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
